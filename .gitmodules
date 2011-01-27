@@ -16,3 +16,6 @@
 [submodule "support/promised-io"]
 	path = support/promised-io
 	url = https://github.com/kriszyp/promised-io.git
+[submodule "support/has.js"]
+	path = support/has.js
+	url = https://github.com/kriszyp/has.js.git
