@@ -4,3 +4,9 @@
 [submodule "support/requirejs"]
 	path = support/requirejs
 	url = https://github.com/jrburke/requirejs.git
+[submodule "support/dojo"]
+	path = support/dojo
+	url = https://github.com/dojo/dojo.git
+[submodule "support/dijit"]
+	path = support/dijit
+	url = https://github.com/dojo/dijit.git

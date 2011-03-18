@@ -1,0 +1,31 @@
+header {
+	overflow: hidden;
+	padding-bottom: 2px; /* allow for box-shadow */
+}
+
+header nav {
+	border-top: none;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	margin-right: 2em;
+	float: right;
+}
+
+.login {
+	border: none;
+}
+
+.login,
+.currentuser {
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+.login a:hover,
+.currentuser a:hover {
+	text-decoration: none;
+}
