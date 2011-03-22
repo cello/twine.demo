@@ -14,18 +14,3 @@ header nav {
 	margin-right: 2em;
 	float: right;
 }
-
-.login {
-	border: none;
-}
-
-.login,
-.currentuser {
-	font-style: italic;
-	font-size: 0.8em;
-}
-
-.login a:hover,
-.currentuser a:hover {
-	text-decoration: none;
-}

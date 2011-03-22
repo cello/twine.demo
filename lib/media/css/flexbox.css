@@ -1,4 +1,18 @@
 /* credit: http://infrequently.org/2009/08/css-3-progress/ */
+.hbox > * {
+	-webkit-box-flex: 0;
+	-moz-box-flex: 0;
+	box-flex: 0;
+	display: block;
+}
+
+.vbox > * {
+	-webkit-box-flex: 0;
+	-moz-box-flex: 0;
+	box-flex: 0;
+	display: block;
+}
+
 .hbox {
 	display: -webkit-box;
 	-webkit-box-orient: horizontal;

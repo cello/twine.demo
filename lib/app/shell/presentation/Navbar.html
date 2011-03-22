@@ -1,20 +1,33 @@
 {{#model}}
-<nav>
-	{{#user}}
-	<div class="currentuser navitem"><a href="#profile">{{username}}</a></div>
-	{{/user}}
-	<ul class="modulelist">
-	{{#modules}}
-		<li><a href="#{{target}}">{{label}}</a></li>
-	{{/modules}}
-	</ul>
-	<div class="login navitem">
+<div>
+	<nav>
 		{{#user}}
-		<a href="#logout">Logout</a>
+		<div class="currentuser navitem"><a href="#profile">{{username}}</a></div>
 		{{/user}}
-		{{^user}}
-		<a href="#login">Login</a>
-		{{/user}}
-	</div>
-</nav>
+		<ul class="modulelist">
+		{{#modules}}
+			<li><a href="#{{target}}">{{label}}</a></li>
+		{{/modules}}
+		</ul>
+		<div class="login navitem">
+			{{#user}}
+			<a href="#logout">Logout</a>
+			{{/user}}
+			{{^user}}
+			<a href="#login">Login</a>
+			{{/user}}
+		</div>
+		<form class="loginform hbox{{^showLogin}} hidden{{/showLogin}}" id="{{id}}-loginForm">
+			<div class="vbox">
+				<input type="text" name="username" id="{{id}}-username" placeholder="Username">
+				<input type="password" name="password" id="{{id}}-password" placeholder="Password">
+				<small>hint: <code>username/secret</code></small>
+				<div class="txtR"><input type="submit" value="Login"></div>
+				{{#invalidUser}}
+				<div>Try again...</div>
+				{{/invalidUser}}
+			</div>
+		</form>
+	</nav>
+</div>
 {{/model}}
