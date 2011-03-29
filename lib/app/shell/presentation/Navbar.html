@@ -17,7 +17,8 @@
 			<a href="#login">Login</a>
 			{{/user}}
 		</div>
-		<form class="loginform hbox{{^showLogin}} hidden{{/showLogin}}" id="{{id}}-loginForm">
+		{{#showLogin}}
+		<form class="loginform hbox" id="{{id}}-loginForm">
 			<div class="vbox">
 				<input type="text" name="username" id="{{id}}-username" placeholder="Username">
 				<input type="password" name="password" id="{{id}}-password" placeholder="Password">
@@ -28,6 +29,7 @@
 				{{/invalidUser}}
 			</div>
 		</form>
+		{{/showLogin}}
 	</nav>
 </div>
 {{/model}}

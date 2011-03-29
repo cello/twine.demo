@@ -11,6 +11,10 @@ html, body {
 }
 
 section {
-	overflow: auto;
 	margin: 1.8em 0;
+}
+header,
+footer {
+	background-color: #efefef;
+	padding-bottom: 2em;
 }

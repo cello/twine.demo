@@ -1,6 +1,5 @@
 header {
 	overflow: hidden;
-	padding-bottom: 2px; /* allow for box-shadow */
 }
 
 header nav {
