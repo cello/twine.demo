@@ -3,7 +3,13 @@
 	<head>
 		<title>twine demo</title>
 		<link rel="stylesheet" href="lib/media/css/demo.css" type="text/css">
-		<script src="support/requirejs/require.js" data-main="./lib/index"></script>
+		<script>
+			var djConfig = {
+				async: true
+			};
+		</script>
+		<script src="support/dojo/dojo.js"></script>
+		<script src="lib/index.js"></script>
 	</head>
 	<body></body>
 </html>
