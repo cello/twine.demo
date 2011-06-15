@@ -1,6 +1,6 @@
 [submodule "support/twine"]
 	path = support/twine
-	url = https://github.com/neonstalwart/twine.git
+	url = https://github.com/cello/twine.git
 [submodule "support/dojo"]
 	path = support/dojo
 	url = https://github.com/dojo/dojo.git
